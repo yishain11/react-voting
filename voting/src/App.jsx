@@ -6,6 +6,7 @@ import Vote from './components/vote/Vote';
 function App() {
   const [hasVoted, setHasVoted] = useState(false)
   const [isLogIn, setIsLogIn] = useState(false)
+  console.log('isLogIn', isLogIn)
   if(!isLogIn){
     return <Login setIsLogIn={setIsLogIn}></Login>
   } else {
